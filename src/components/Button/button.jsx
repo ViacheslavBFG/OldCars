@@ -7,7 +7,7 @@ const Button = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsVisible(true);
-    }, 6500);
+    }, 5500);
 
     return () => clearTimeout(timeoutId);
   }, []);

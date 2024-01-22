@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import Bcg from '../../styles/img/bcg/bcg1.jpg';
 
 const BorderBlink = keyframes`
   0%{
@@ -22,7 +23,12 @@ export const TitleContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top:400px;
+  background-image: url(${Bcg});
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width:100vw;
 `;
 
 export const HeaderTitle = styled.h1`
@@ -32,4 +38,5 @@ export const HeaderTitle = styled.h1`
   overflow: hidden;
   border-right: 4px solid white;
   animation: ${BorderBlink} 0.75s step-end infinite, ${PrintedText} 5s steps(40);
+  margin-top:450px;
 `;
