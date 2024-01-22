@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/OldCars/static/css/main.7acaea2f.css",
+    "main.js": "/OldCars/static/js/main.e7af2516.js",
+    "static/media/bcg1.jpg": "/OldCars/static/media/bcg1.e39f9c1fc5e6983e83a8.jpg",
+    "index.html": "/OldCars/index.html",
+    "main.7acaea2f.css.map": "/OldCars/static/css/main.7acaea2f.css.map",
+    "main.e7af2516.js.map": "/OldCars/static/js/main.e7af2516.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.e7af2516.js"
+  ]
+}
