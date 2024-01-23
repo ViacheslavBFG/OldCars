@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import GlobalStyle from 'styles/globalStyle';
 import Homepage from 'components/Homepage/homepage';
-import Galery from '../components/Galery/galery';
+import Gallery from './Gallery/gallery';
 export const App = () => {
   return (
     <>
@@ -9,7 +9,7 @@ export const App = () => {
 
       <Routes>
         <Route  path='/'  element={<Homepage />} />
-        <Route  path='/galery' element={<Galery />} />
+        <Route  path='/gallery' element={<Gallery />} />
       </Routes>
     </>
   );

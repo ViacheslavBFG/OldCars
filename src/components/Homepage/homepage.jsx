@@ -1,7 +1,7 @@
 import React from 'react';
-import { HeaderTitle, TitleContainer } from './homepageStyle';
+import { HeaderTitle, TitleContainer,StyledLink  } from './homepageStyle';
 import Button from 'components/Button/button';
-import { Link } from 'react-router-dom';
+
 
 const homepage = () => {
   return (
@@ -10,9 +10,9 @@ const homepage = () => {
         <HeaderTitle>
           Old Cars: More Than Metal, It's a Heartbeat...
         </HeaderTitle>
-        <Link to="/galery">
+        <StyledLink to="/gallery">
           <Button />
-        </Link>
+        </StyledLink>
       </TitleContainer>
     </>
   );

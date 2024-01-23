@@ -1,6 +1,12 @@
 import styled, { keyframes } from 'styled-components';
 import Bcg from '../../styles/img/bcg/bcg1.jpg';
 
+import { Link } from 'react-router-dom';
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
 const BorderBlink = keyframes`
   0%{
     border-color:white
@@ -28,7 +34,7 @@ export const TitleContainer = styled.div`
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
 `;
 
 export const HeaderTitle = styled.h1`
@@ -38,5 +44,5 @@ export const HeaderTitle = styled.h1`
   overflow: hidden;
   border-right: 4px solid white;
   animation: ${BorderBlink} 0.75s step-end infinite, ${PrintedText} 5s steps(40);
-  margin-top:450px;
+  margin-top: 450px;
 `;
