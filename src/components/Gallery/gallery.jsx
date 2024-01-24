@@ -2,9 +2,10 @@ import React from 'react';
 import {
   MainDiv,
   FrameDiv,
-  BtnCar,
   ImageContainer,
   Image,
+  Label,
+  Span,
 } from './galleryStyle';
 
 import chevroletcamaro from '../../styles/img/1969/chevroletcamaro/chevroletcamaro1.jpg';
@@ -17,36 +18,38 @@ const gallery = () => {
   const images = [
     {
       imageUrl: chevroletcamaro,
-      buttonLabel: 'Кнопка 1',
+      buttonLabel: 'Chevrolet Camaro 1967–1969 first gen.',
     },
     {
       imageUrl: dodgecharger,
-      buttonLabel: 'Кнопка 2',
+      buttonLabel: 'Dodge Charger 1968–1970 second gen.',
     },
     {
       imageUrl: fordmustang,
-      buttonLabel: 'Кнопка 3',
+      buttonLabel: 'Ford Mustang 1964-1973 first gen.',
     },
     {
       imageUrl: mercurycougar,
-      buttonLabel: 'Кнопка 4',
+      buttonLabel: 'Mercury Cougar 1967-1970 first gen. ',
     },
     {
       imageUrl: pontiacfirebird,
-      buttonLabel: 'Кнопка 5',
+      buttonLabel: 'Pontiac Firebird 1967-1969 first gen.',
     },
     {
-        imageUrl: AMCRebel,
-        buttonLabel: 'Кнопка 6',
-      },
+      imageUrl: AMCRebel,
+      buttonLabel: 'AMC Rebel 1967-1970 first gen.',
+    },
   ];
   return (
     <MainDiv>
       <FrameDiv>
         {images.map((item, index) => (
           <ImageContainer key={index}>
-            <Image src={item.imageUrl} alt={`Image ${index + 1}`} />
-            <BtnCar>{item.buttonLabel}</BtnCar>
+            <Label>
+              <Span>{item.buttonLabel}</Span>
+              <Image src={item.imageUrl} alt={`Image ${index + 1}`} />
+            </Label>
           </ImageContainer>
         ))}
       </FrameDiv>

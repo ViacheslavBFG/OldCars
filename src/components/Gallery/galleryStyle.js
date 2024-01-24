@@ -15,24 +15,40 @@ export const MainDiv = styled.div`
 `;
 
 export const FrameDiv = styled.div`
-  margin-top: 50px;
+  margin: 50px 30px 0;
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 `;
 
 export const ImageContainer = styled.div`
   width: 450px;
-  height: 290px;
   margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: auto;
+  cursor: pointer;
 `;
-export const BtnCar = styled.button``;
+
+export const Label = styled.label``;
+
+export const Span = styled.span`
+  height: 25px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+`;
