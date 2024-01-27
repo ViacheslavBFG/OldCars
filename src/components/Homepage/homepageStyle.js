@@ -35,6 +35,7 @@ export const TitleContainer = styled.div`
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 `;
 
 export const HeaderTitle = styled.h1`

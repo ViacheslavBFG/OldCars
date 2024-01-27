@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BcgUSA from '../../styles/img/bcg/bcgUSA.jpg';
+import { Link } from 'react-router-dom';
 
 export const MainDiv = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ export const MainDiv = styled.div`
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 `;
 
 export const FrameDiv = styled.div`
@@ -31,7 +33,9 @@ export const ImageContainer = styled.div`
   transition: transform 0.5s ease;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.055);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3),
+      0 10px 20px rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -51,4 +55,9 @@ export const Span = styled.span`
   justify-content: center;
   display: flex;
   align-items: center;
+`;
+
+export const LinkStyleG = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;
