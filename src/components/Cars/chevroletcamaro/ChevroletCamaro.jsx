@@ -1,7 +1,7 @@
 import React from 'react';
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Camaro1 from '../../../styles/img/1969/chevroletcamaro/chevroletcamaro1.jpg';
+
+
 import Camaro2 from '../../../styles/img/1969/chevroletcamaro/chevroletcamaro2.jpg';
 import Camaro3 from '../../../styles/img/1969/chevroletcamaro/chevroletcamaro3.jpg';
 import {
