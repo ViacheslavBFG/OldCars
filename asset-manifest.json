@@ -1,24 +1,34 @@
 {
   "files": {
     "main.css": "/OldCars/static/css/main.7acaea2f.css",
-    "main.js": "/OldCars/static/js/main.aa45abcf.js",
+    "main.js": "/OldCars/static/js/main.a6645968.js",
     "static/media/bcOld2.jpg": "/OldCars/static/media/bcOld2.830fae5845534f63be3c.jpg",
     "static/media/pontiacfirebird13.jpg": "/OldCars/static/media/pontiacfirebird13.8b0a9dbe73559a715c86.jpg",
     "static/media/bcgUSA.jpg": "/OldCars/static/media/bcgUSA.547d0c2e1e4a9c4cb813.jpg",
+    "static/media/AMCRebel3.jpg": "/OldCars/static/media/AMCRebel3.721a0d670518da804626.jpg",
+    "static/media/dodgecharger3.jpg": "/OldCars/static/media/dodgecharger3.981594f4eb6d3fee5ed6.jpg",
     "static/media/chevroletcamaro2.jpg": "/OldCars/static/media/chevroletcamaro2.c95ab6109f66f3bd4b6e.jpg",
     "static/media/fordmustang1.jpg": "/OldCars/static/media/fordmustang1.8f9ca0e26a38e7991e41.jpg",
     "static/media/dodgecharger1.jpg": "/OldCars/static/media/dodgecharger1.e8676608618424516e0b.jpg",
     "static/media/bcg1.jpg": "/OldCars/static/media/bcg1.e39f9c1fc5e6983e83a8.jpg",
+    "static/media/fordmustang2.jpg": "/OldCars/static/media/fordmustang2.cc71e56d0eadd94ddb5d.jpg",
     "static/media/chevroletcamaro1.jpg": "/OldCars/static/media/chevroletcamaro1.4ff6c5cf201031f8e3fd.jpg",
+    "static/media/pontiacfirebird2.jpg": "/OldCars/static/media/pontiacfirebird2.6124d663bd42785b53cd.jpg",
+    "static/media/PontiacFirebird4.jpg": "/OldCars/static/media/PontiacFirebird4.c4fa8a9323b37c4fa6c0.jpg",
+    "static/media/AMCRebel2.jpg": "/OldCars/static/media/AMCRebel2.ef0745ec894ba654ab61.jpg",
     "static/media/chevroletcamaro3.jpg": "/OldCars/static/media/chevroletcamaro3.b6274c91764fe3294cbd.jpg",
+    "static/media/mercurycougar3.jpg": "/OldCars/static/media/mercurycougar3.e5904a2ef328f90c3069.jpg",
+    "static/media/mercurycougar2.jpg": "/OldCars/static/media/mercurycougar2.37d7c4dbd13959e96c54.jpg",
     "static/media/mercurycougar1 .jpg": "/OldCars/static/media/mercurycougar1 .43d1928c9f16fb61080f.jpg",
     "static/media/AMCRebel1.jpg": "/OldCars/static/media/AMCRebel1.f19f73c14a4a241411db.jpg",
+    "static/media/fordmustang3.jpg": "/OldCars/static/media/fordmustang3.94a10919e9891667f61f.jpg",
+    "static/media/dodgecharger2.jpg": "/OldCars/static/media/dodgecharger2.13f92ba36cb3538a18bc.jpg",
     "index.html": "/OldCars/index.html",
     "main.7acaea2f.css.map": "/OldCars/static/css/main.7acaea2f.css.map",
-    "main.aa45abcf.js.map": "/OldCars/static/js/main.aa45abcf.js.map"
+    "main.a6645968.js.map": "/OldCars/static/js/main.a6645968.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.aa45abcf.js"
+    "static/js/main.a6645968.js"
   ]
 }
