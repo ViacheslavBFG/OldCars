@@ -1,47 +1,68 @@
+
+
 import styled, { keyframes } from 'styled-components';
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
+export const faultyFlicker = keyframes`
+  0% {
+    opacity: 0.1;
   }
-  to {
-    opacity: 1;
+  
+`;
+
+export const textFlicker = keyframes`
+ 
+`;
+
+export const borderFlicker = keyframes`
+ 
+`;
+
+export const pulseShadow = keyframes`
+  0% {
+    box-shadow: inset 0px 0px 0.5em 0px orange, 0px 0px 0.5em 0px orange, 0 0 0.5em 0px orange;
+  }
+  50% {
+    box-shadow: inset 0px 0px 0.6em 0px orange, 0px 0px 0.6em 0px orange, 0 0 0.6em 0px orange;
+  }
+  100% {
+    box-shadow: inset 0px 0px 0.5em 0px orange, 0px 0px 0.5em 0px orange, 0 0 0.5em 0px orange;
   }
 `;
 
-export const Btn = styled.button`
-  border: none;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: 'Sevillana', cursive;
+export const GlowingButtonContainer = styled.button`
+  position: relative;
+  color: orange;
   cursor: pointer;
-  display: block;
-  opacity: 0;
-  animation: ${fadeIn} 3s ease-in-out forwards;
-  width: 200px;
-  height: 40px;
-  background-color: transparent;
-  border-radius: 5px;
-  color: wheat;
-  border: 2px solid #f39c12;
-  box-shadow: 0 0 20px 5px rgba(243, 156, 18, 0.5);
-  animation: blink 1s infinite;
+  padding: 0.35em 1em;
+  border: 0.15em solid orange;
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: 'Sevillana', cursive;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1em;
 
-  @keyframes blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-  }
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px orange, 0px 0px 0.5em 0px orange;
+  -moz-box-shadow: inset 0px 0px 0.5em 0px orange, 0px 0px 0.5em 0px orange;
+  box-shadow: inset 0px 0px 0.5em 0px orange, 0px 0px 0.5em 0px orange;
+  animation: ${borderFlicker} 2s linear infinite;
 
   &:hover {
-    scale:1.1;
-    
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: ${pulseShadow} 1.5s linear infinite;
   }
-  &:active{
-    scale:1.2;
-  }
+`;
+
+export const GlowingText = styled.span`
+  float: left;
+  margin-right: -0.8em;
+  text-shadow: 0 0 0.125em hsl(30 100% 50% / 0.3), 0 0 0.45em orange;
+  animation: ${textFlicker} 3s linear infinite;
+`;
+
+export const FaultyLetter = styled.span`
+  opacity: 0.5;
+  animation: ${faultyFlicker} 2s linear infinite;
 `;

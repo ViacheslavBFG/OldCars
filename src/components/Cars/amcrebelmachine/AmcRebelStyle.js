@@ -1,6 +1,28 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
+const colorShift = keyframes`
+   0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 export const MainContainer = styled.div`
   background-image: url(${BcOld});
   background-size: cover;
@@ -11,6 +33,7 @@ export const MainContainer = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: ${colorShift} 1s ease-in-out alternate;
 `;
 
 export const PositionContainer = styled.div`

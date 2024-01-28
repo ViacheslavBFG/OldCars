@@ -24,6 +24,15 @@ const PrintedText = keyframes`
  }
  `;
 
+const fadeIn = keyframes`
+from {
+  filter: contrast(4);
+}
+to {
+  filter: contrast(1);
+}
+`;
+
 export const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -36,6 +45,7 @@ export const TitleContainer = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  animation: ${fadeIn} 2s ease; /* Анимация появления */
 `;
 
 export const HeaderTitle = styled.h1`
@@ -45,5 +55,5 @@ export const HeaderTitle = styled.h1`
   overflow: hidden;
   border-right: 4px solid white;
   animation: ${BorderBlink} 0.75s step-end infinite, ${PrintedText} 5s steps(40);
-  margin-top: 450px;
+  margin-top: 490px;
 `;

@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { Btn } from './buttonStyle';
+import React from 'react';
+import { GlowingButtonContainer, GlowingText, FaultyLetter } from './buttonStyle';
 
-const Button = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setIsVisible(true);
-    }, 5500);
-
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-  return <>{isVisible && <Btn>LET'S GO !</Btn>}</>;
+const GlowingButton = () => {
+  return (
+    <GlowingButtonContainer>
+      <GlowingText>
+        L<FaultyLetter>E</FaultyLetter>T'S GO
+      </GlowingText>
+    </GlowingButtonContainer>
+  );
 };
 
-export default Button;
+export default GlowingButton;

@@ -1,6 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
+const rotateAndFadeIn = keyframes`
+  0% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  50% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+`;
 export const MainContainer = styled.div`
   background-image: url(${BcOld});
   background-size: cover;
@@ -11,6 +25,7 @@ export const MainContainer = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: ${rotateAndFadeIn} 1s ease;
 `;
 
 export const PositionContainer = styled.div`

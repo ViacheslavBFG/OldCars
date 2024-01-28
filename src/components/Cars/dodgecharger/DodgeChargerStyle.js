@@ -1,5 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 export const MainContainer = styled.div`
   background-image: url(${BcOld});
@@ -11,6 +22,7 @@ export const MainContainer = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: ${fadeIn} 1s ease;
 `;
 
 export const PositionContainer = styled.div`
@@ -33,8 +45,6 @@ export const ImgOne = styled.img`
   .float-img {
     float: right; /* Float the image to the right */
     margin: 0 0 10px 10px; /* Add margin to create space between text and image */
-
-
   }
 `;
 

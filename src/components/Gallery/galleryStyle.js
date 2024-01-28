@@ -1,6 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BcgUSA from '../../styles/img/bcg/bcgUSA.jpg';
 import { Link } from 'react-router-dom';
+
+const fadeIn = keyframes`
+ from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
 
 export const MainDiv = styled.div`
   display: flex;
@@ -14,6 +23,7 @@ export const MainDiv = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  animation: ${fadeIn} 1s ease-in-out; /* Анимация появления */
 `;
 
 export const FrameDiv = styled.div`

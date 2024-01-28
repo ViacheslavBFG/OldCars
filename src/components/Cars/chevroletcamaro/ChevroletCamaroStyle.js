@@ -1,5 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
+
+const fadeIn = keyframes`
+
+ from {
+  opacity:0.25;
+    transform: translateX(+100%);
+    
+  }
+  to {
+    opacity:1;
+    transform: translateX(0);
+  }
+`;
 
 export const MainContainer = styled.div`
   background-image: url(${BcOld});
@@ -11,6 +24,7 @@ export const MainContainer = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: ${fadeIn} 1s ease-in-out; /* Анимация появления */
 `;
 
 export const PositionContainer = styled.div`
