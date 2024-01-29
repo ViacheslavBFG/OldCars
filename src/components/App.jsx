@@ -13,7 +13,6 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
-
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/gallery" element={<Gallery />} />
