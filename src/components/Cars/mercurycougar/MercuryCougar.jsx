@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from '../../Header/header';
 import Mercury2 from '../../../styles/img/1969/mercurycougar/mercurycougar2.jpg';
 import Mercury3 from '../../../styles/img/1969/mercurycougar/mercurycougar3.jpg';
 import {
@@ -16,11 +16,18 @@ import {
   PositionContainer,
   Span,
 } from './MercuryCougarStyle';
+import { Link } from 'react-router-dom';
+import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
 
 const MercuryCougar = () => {
   return (
     <>
       <MainContainer>
+        <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation Mercury Cougar:

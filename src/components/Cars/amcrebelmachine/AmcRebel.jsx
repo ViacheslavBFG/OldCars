@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from 'components/Header/header';
 import AMC2 from '../../../styles/img/1969/amcrebelmachine/AMCRebel2.jpg';
 import AMC3 from '../../../styles/img/1969/amcrebelmachine/AMCRebel3.jpg';
 import {
@@ -16,12 +16,20 @@ import {
   ParagraphFactThree,
   PositionContainer,
   Span,
+  HeaderDiv,
 } from './AmcRebelStyle';
+import { Link } from 'react-router-dom';
 
 const AmcRebel = () => {
   return (
     <>
       <MainContainer>
+        <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
+
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation AMC Rebel:

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from '../../Header/header';
 import Dodge2 from '../../../styles/img/1969/dodgecharger/dodgecharger2.jpg';
 import Dodge3 from '../../../styles/img/1969/dodgecharger/dodgecharger3.jpg';
 import {
@@ -16,11 +16,19 @@ import {
   PositionContainer,
   Span,
 } from './DodgeChargerStyle';
+import { Link } from 'react-router-dom';
+import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
 
 const DodgeCharger = () => {
   return (
     <>
       <MainContainer>
+        <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
+
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation Dodge Charger:

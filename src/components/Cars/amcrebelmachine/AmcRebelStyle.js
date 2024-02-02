@@ -88,3 +88,9 @@ export const ParagraphFactTwo = styled.p`
 export const ParagraphFactThree = styled.p`
   line-height: 1.5;
 `;
+
+export const HeaderDiv = styled.div`
+  position: absolute;
+  left: 2%;
+  top: 5%;
+`;

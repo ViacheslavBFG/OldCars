@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from '../../Header/header';
 import Pontiac2 from '../../../styles/img/1969/pontiacfirebird/pontiacfirebird2.jpg';
 import Pontiac3 from '../../../styles/img/1969/pontiacfirebird/PontiacFirebird4.jpg';
 import {
@@ -17,11 +17,18 @@ import {
   PositionContainer,
   Span,
 } from './PontiacFirebirdStyle';
+import { Link } from 'react-router-dom';
+import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
 
 const PontiacFirebird = () => {
   return (
     <>
       <MainContainer>
+        <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation Pontiac Firebird:

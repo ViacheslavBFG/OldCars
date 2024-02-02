@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from '../../Header/header'
 import Camaro2 from '../../../styles/img/1969/chevroletcamaro/chevroletcamaro2.jpg';
 import Camaro3 from '../../../styles/img/1969/chevroletcamaro/chevroletcamaro3.jpg';
 import {
@@ -17,11 +17,18 @@ import {
   PositionContainer,
   Span,
 } from './ChevroletCamaroStyle';
+import { Link } from 'react-router-dom';
+import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
 
 const ChevroletCamaro = () => {
   return (
     <>
       <MainContainer>
+      <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation Chevrolet Camaro:

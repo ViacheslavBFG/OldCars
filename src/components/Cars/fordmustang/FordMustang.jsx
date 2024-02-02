@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from '../../Header/header';
 import Ford2 from '../../../styles/img/1969/fordmustang/fordmustang2.jpg';
 import Ford3 from '../../../styles/img/1969/fordmustang/fordmustang3.jpg';
 import {
@@ -16,11 +16,18 @@ import {
   PositionContainer,
   Span,
 } from './FordMustangStyle';
+import { Link } from 'react-router-dom';
+import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
 
 const FordMustang = () => {
   return (
     <>
       <MainContainer>
+      <Link to="/gallery">
+          <HeaderDiv>
+            <Header />
+          </HeaderDiv>
+        </Link>
         <TextContainer>
           <TitleFacts>
             Three interesting facts about the first-generation Ford Mustang:
