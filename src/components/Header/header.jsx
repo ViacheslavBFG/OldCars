@@ -6,7 +6,7 @@ const Button = () => {
   return (
     <Wrapper>
       <StyledLink href="#">
-        <span>BACK</span>
+        <span>&#8592; BACK</span>
       </StyledLink>
     </Wrapper>
   );

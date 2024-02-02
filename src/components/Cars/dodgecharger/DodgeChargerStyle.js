@@ -43,8 +43,8 @@ export const ImgOne = styled.img`
   width: 510px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right; 
+    margin: 0 0 10px 10px; 
   }
 `;
 
