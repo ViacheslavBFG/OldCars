@@ -91,6 +91,7 @@ export const ParagraphFactThree = styled.p`
 
 export const HeaderDiv = styled.div`
   position: absolute;
-  left: 2%;
+  left: 8%;
   top: 5%;
+  
 `;

@@ -1,19 +1,15 @@
+// Ваш React компонент в файле Button.js
 import React from 'react';
-import {
-  GlowingButtonContainer,
-  GlowingText,
-  FaultyLetter,
-  FaultyLetter2,
-} from './headerStyle';
+import StyledLink, { Wrapper } from './headerStyle';
 
-const GlowingButton = () => {
+const Button = () => {
   return (
-    <GlowingButtonContainer>
-      <GlowingText>
-        B<FaultyLetter>A</FaultyLetter>C<FaultyLetter2>K</FaultyLetter2>
-      </GlowingText>
-    </GlowingButtonContainer>
+    <Wrapper>
+      <StyledLink href="#">
+        <span>BACK</span>
+      </StyledLink>
+    </Wrapper>
   );
 };
 
-export default GlowingButton;
+export default Button;
