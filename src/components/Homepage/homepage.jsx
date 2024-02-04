@@ -5,14 +5,13 @@ import Button from 'components/Button/button';
 const homepage = () => {
   return (
     <>
-      <TitleContainer>
-        <div className="container">
-          <div className="row">
-            <HeaderTitle className="col-md-12 text-center">
-              Old Cars: More Than Metal, It's a Heartbeat...
-            </HeaderTitle>
-          </div>
+      <TitleContainer className="container-fluid">
+        <div className="row">
+          <HeaderTitle className="col-md-12 text-center">
+            Old Cars: More Than Metal, It's a Heartbeat...
+          </HeaderTitle>
         </div>
+
         <StyledLink to="/gallery">
           <Button />
         </StyledLink>
