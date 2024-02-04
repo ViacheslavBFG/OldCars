@@ -2,13 +2,13 @@ import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
 const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: scale(0.8);
+0% {
+    opacity: 0.50;
+    transform: translateY(-20px);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 `;
 
@@ -43,8 +43,8 @@ export const ImgOne = styled.img`
   width: 510px;
   border-radius: 15px;
   .float-img {
-    float: right; 
-    margin: 0 0 10px 10px; 
+    float: right;
+    margin: 0 0 10px 10px;
   }
 `;
 

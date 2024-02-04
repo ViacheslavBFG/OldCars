@@ -3,14 +3,13 @@ import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
 const fadeIn = keyframes`
 
- from {
-  opacity:0.25;
-    transform: translateX(+100%);
-    
+0% {
+    opacity: 0.50;
+    transform: translateY(-20px);
   }
-  to {
-    opacity:1;
-    transform: translateX(0);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 `;
 
@@ -24,7 +23,7 @@ export const MainContainer = styled.div`
   margin: 0;
   padding: 0;
   overflow: hidden;
-  animation: ${fadeIn} 1s ease-in-out; /* Анимация появления */
+  animation: ${fadeIn} 1s ease-in-out;
 `;
 
 export const PositionContainer = styled.div`

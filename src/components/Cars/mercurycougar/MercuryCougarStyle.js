@@ -2,13 +2,13 @@ import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
 const stretchFadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
+0% {
+    opacity: 0.50;
+    transform: translateY(-20px);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: scaleY(1);
+    transform: translateY(0);
   }
 `;
 

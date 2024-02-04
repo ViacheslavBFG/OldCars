@@ -1,73 +1,53 @@
 import styled, { keyframes } from 'styled-components';
-import BcgUSA from '../../styles/img/bcg/bcgUSA.jpg';
+import bcgUSA from '../../styles/img/bcg/bcgUSA.jpg';
 import { Link } from 'react-router-dom';
 
 const fadeIn = keyframes`
+
  from {
-    transform: translateX(-100%);
+  opacity:0.25;
+    
+    
   }
   to {
-    transform: translateX(0);
+    opacity:1;
+    
   }
 `;
 
 export const MainDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url(${BcgUSA});
+  min-height: 100vh;
+  background-image: url(${bcgUSA});
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  animation: ${fadeIn} 1s ease-in-out; /* Анимация появления */
-`;
-
-export const FrameDiv = styled.div`
-  margin: 50px 30px 0;
+  justify-content: center;
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  animation: ${fadeIn} 2s ease-out;
 `;
 
-export const ImageContainer = styled.div`
-  width: 450px;
-  margin: 10px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.5s ease;
+export const ImgContainer = styled.div`
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.055);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3),
-      0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(120%);
   }
 `;
-
-export const Image = styled.img`
-  width: 100%;
-  height: auto;
+export const Label = styled.label`
+  background-color: white;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
   cursor: pointer;
 `;
 
-export const Label = styled.label``;
+export const Span = styled.span``;
 
-export const Span = styled.span`
-  height: 25px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+export const ImgCars = styled.img`
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
-
-export const LinkStyleG = styled(Link)`
-  text-decoration: none;
-  color: inherit;
+export const LinkStyle = styled(Link)`
+  color: black;
 `;

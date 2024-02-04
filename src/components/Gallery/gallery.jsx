@@ -1,13 +1,4 @@
 import React from 'react';
-import {
-  MainDiv,
-  FrameDiv,
-  ImageContainer,
-  Image,
-  Label,
-  Span,
-  LinkStyleG,
-} from './galleryStyle';
 
 import chevroletcamaro from '../../styles/img/1969/chevroletcamaro/chevroletcamaro1.jpg';
 import dodgecharger from '../../styles/img/1969/dodgecharger/dodgecharger1.jpg';
@@ -15,6 +6,15 @@ import fordmustang from '../../styles/img/1969/fordmustang/fordmustang1.jpg';
 import mercurycougar from '../../styles/img/1969/mercurycougar/mercurycougar1 .jpg';
 import pontiacfirebird from '../../styles/img/1969/pontiacfirebird/pontiacfirebird13.jpg';
 import amcrebel from '../../styles/img/1969/amcrebelmachine/AMCRebel1.jpg';
+
+import {
+  MainDiv,
+  ImgContainer,
+  Label,
+  Span,
+  ImgCars,
+  LinkStyle,
+} from './galleryStyle';
 
 const gallery = () => {
   const images = [
@@ -50,21 +50,27 @@ const gallery = () => {
     },
   ];
   return (
-    <MainDiv>
-      <FrameDiv>
-        {images.map((item, index) => (
-          <LinkStyleG to={images[index].path}>
-            <ImageContainer key={index}>
+    <MainDiv className="container-fluid ">
+      <div className="row justify-content-center mt-5 ">
+        {images.map((image, index) => (
+          <ImgContainer
+            key={index}
+            className="col-sm-12 col-md-6 col-xxl-4 mt-3"
+          >
+            <LinkStyle to={image.path}>
               <Label>
-                <Span>{item.buttonLabel}</Span>
-                <Image src={item.imageUrl} alt={`Image ${index + 1}`} />
+                <Span>{image.buttonLabel}</Span>
+                <ImgCars
+                  className="img-fluid"
+                  src={image.imageUrl}
+                  alt={image.buttonLabel}
+                />
               </Label>
-            </ImageContainer>
-          </LinkStyleG>
+            </LinkStyle>
+          </ImgContainer>
         ))}
-      </FrameDiv>
+      </div>
     </MainDiv>
   );
 };
-
 export default gallery;

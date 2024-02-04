@@ -2,21 +2,9 @@ import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
 const colorShift = keyframes`
-   0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  25% {
-    opacity: 0.25;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(0);
-  }
-  75% {
-    opacity: 0.75;
-    transform: translateY(0);
+ 0% {
+    opacity: 0.50;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -54,8 +42,8 @@ export const ImgOne = styled.img`
   width: 440px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right;
+    margin: 0 0 10px 10px;
   }
 `;
 
@@ -63,8 +51,8 @@ export const ImgTwo = styled.img`
   width: 500px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right;
+    margin: 0 0 10px 10px;
   }
 `;
 
@@ -93,5 +81,4 @@ export const HeaderDiv = styled.div`
   position: absolute;
   left: 8%;
   top: 5%;
-  
 `;

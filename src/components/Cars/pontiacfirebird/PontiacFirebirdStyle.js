@@ -2,17 +2,13 @@ import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
 const rotateAndFadeIn = keyframes`
-  0% {
-    opacity: 1;
-    filter: blur(0);
-  }
-  50% {
-    opacity: 0;
-    filter: blur(10px);
+0% {
+    opacity: 0.50;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
-    filter: blur(0);
+    transform: translateY(0);
   }
 `;
 export const MainContainer = styled.div`
