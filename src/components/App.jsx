@@ -8,6 +8,7 @@ import DodgeCharger from './Cars/dodgecharger/DodgeCharger';
 import FordMustang from './Cars/fordmustang/FordMustang';
 import MercuryCougar from './Cars/mercurycougar/MercuryCougar';
 import PontiacFirebird from './Cars/pontiacfirebird/PontiacFirebird';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const App = () => {
   return (

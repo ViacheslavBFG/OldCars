@@ -7,22 +7,7 @@ export const StyledLink = styled(Link)`
   color: inherit;
 `;
 
-const BorderBlink = keyframes`
-  0%{
-    border-color:white
-  }
-   50% {
-    border-color:transparent
-  }
-  100% {
-    border-color:white
-  }
-`;
-const PrintedText = keyframes`
- from{
-  width:0
- }
- `;
+
 
 const fadeIn = keyframes`
 from {
@@ -45,15 +30,21 @@ export const TitleContainer = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  animation: ${fadeIn} 2s ease; /* Анимация появления */
+  animation: ${fadeIn} 2s ease;
+`;
+
+const fadeInAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
   color: wheat;
-  width: 40ch;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 4px solid white;
-  animation: ${BorderBlink} 0.75s step-end infinite, ${PrintedText} 5s steps(40);
   margin-top: 490px;
+  opacity: 0;
+  animation: ${fadeInAnimation} 4s ease-in-out forwards;
 `;
