@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -36,6 +36,20 @@ export const TitleFacts = styled.h2`
 export const TextContainer = styled.div`
   margin: 20px;
   overflow: hidden;
+  @media (max-width: 1430px) {
+    margin-top: 60px;
+  }
+`;
+
+export const HeaderDiv = styled.div`
+  position: absolute;
+  left: 8%;
+  top: 5%;
+
+  @media (max-width: 1430px) {
+    left: 50%;
+    top: 5%;
+  }
 `;
 
 export const ImgOne = styled.img`
@@ -75,10 +89,4 @@ export const ParagraphFactTwo = styled.p`
 `;
 export const ParagraphFactThree = styled.p`
   line-height: 1.5;
-`;
-
-export const HeaderDiv = styled.div`
-  position: absolute;
-  left: 8%;
-  top: 5%;
 `;

@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -38,14 +38,17 @@ export const TitleFacts = styled.h2`
 export const TextContainer = styled.div`
   margin: 20px;
   overflow: hidden;
+  @media (max-width: 1430px) {
+    margin-top: 60px;
+  }
 `;
 
 export const ImgOne = styled.img`
   width: 480px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right;
+    margin: 0 0 10px 10px;
   }
 `;
 
@@ -53,8 +56,8 @@ export const ImgTwo = styled.img`
   width: 430px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right;
+    margin: 0 0 10px 10px;
   }
 `;
 

@@ -17,7 +17,7 @@ export const MainContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -37,6 +37,10 @@ export const TitleFacts = styled.h2`
 export const TextContainer = styled.div`
   margin: 20px;
   overflow: hidden;
+
+  @media (max-width: 1430px) {
+    margin-top: 60px;
+  }
 `;
 
 export const ImgOne = styled.img`
