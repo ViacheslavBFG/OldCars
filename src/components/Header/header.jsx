@@ -1,4 +1,4 @@
-// Ваш React компонент в файле Button.js
+
 import React from 'react';
 import StyledLink, { Wrapper } from './headerStyle';
 

@@ -20,6 +20,7 @@ const ButtonStyles = css`
   text-align: center;
   position: relative;
   transition: all 0.35s;
+  opacity: 0.7;
 
   border-radius: 15px;
 
@@ -42,6 +43,7 @@ const ButtonStyles = css`
 
   &:hover {
     color: #fff;
+    opacity: 1;
 
     &:after {
       width: 100%;
