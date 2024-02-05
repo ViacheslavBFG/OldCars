@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OldCars/static/css/main.5ce3e43a.css",
-    "main.js": "/OldCars/static/js/main.d1d98952.js",
+    "main.js": "/OldCars/static/js/main.fc06aa56.js",
     "static/media/bcOld2.jpg": "/OldCars/static/media/bcOld2.830fae5845534f63be3c.jpg",
     "static/media/pontiacfirebird13.jpg": "/OldCars/static/media/pontiacfirebird13.8b0a9dbe73559a715c86.jpg",
     "static/media/bcgUSA.jpg": "/OldCars/static/media/bcgUSA.547d0c2e1e4a9c4cb813.jpg",
@@ -25,10 +25,10 @@
     "static/media/dodgecharger2.jpg": "/OldCars/static/media/dodgecharger2.13f92ba36cb3538a18bc.jpg",
     "index.html": "/OldCars/index.html",
     "main.5ce3e43a.css.map": "/OldCars/static/css/main.5ce3e43a.css.map",
-    "main.d1d98952.js.map": "/OldCars/static/js/main.d1d98952.js.map"
+    "main.fc06aa56.js.map": "/OldCars/static/js/main.fc06aa56.js.map"
   },
   "entrypoints": [
     "static/css/main.5ce3e43a.css",
-    "static/js/main.d1d98952.js"
+    "static/js/main.fc06aa56.js"
   ]
 }
