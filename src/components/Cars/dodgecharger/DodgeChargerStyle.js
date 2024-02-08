@@ -20,7 +20,7 @@ export const MainContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
   overflow: hidden;
   animation: ${fadeIn} 1s ease;
 `;
@@ -48,6 +48,9 @@ export const ImgOne = styled.img`
   .float-img {
     float: right;
     margin: 0 0 10px 10px;
+  }
+  @media (max-width: 560px) {
+    max-width: 100%;
   }
 `;
 

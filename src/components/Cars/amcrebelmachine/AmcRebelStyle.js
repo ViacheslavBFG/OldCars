@@ -18,8 +18,9 @@ export const MainContainer = styled.div`
   background-attachment: fixed;
   min-height: 100vh;
   width: 100vw;
-  margin: 0;
-  padding: 0;
+  padding-top: 30px;
+  /* margin: 0;
+  padding: 0; */
   overflow: hidden;
   animation: ${colorShift} 1s ease-in-out alternate;
 `;
@@ -55,18 +56,28 @@ export const HeaderDiv = styled.div`
 export const ImgOne = styled.img`
   width: 440px;
   border-radius: 15px;
+
   .float-img {
     float: right;
     margin: 0 0 10px 10px;
+  }
+
+  @media (max-width: 490px) {
+    width: 100%;
   }
 `;
 
 export const ImgTwo = styled.img`
   width: 500px;
   border-radius: 15px;
+
   .float-img {
     float: right;
     margin: 0 0 10px 10px;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
   }
 `;
 

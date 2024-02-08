@@ -64,6 +64,7 @@ const gallery = () => {
                   className="img-fluid"
                   src={image.imageUrl}
                   alt={image.buttonLabel}
+                  loading="lazy"
                 />
               </Label>
             </LinkStyle>

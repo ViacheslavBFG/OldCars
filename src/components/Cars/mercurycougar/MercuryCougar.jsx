@@ -33,7 +33,14 @@ const MercuryCougar = () => {
             Three interesting facts about the first-generation Mercury Cougar:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={Mercury3} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={Mercury3}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Introduction as a Luxury Pony Car:</Span> The Mercury
@@ -58,7 +65,14 @@ const MercuryCougar = () => {
                 overall appeal.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgOne src={Mercury2} alt="" align="right" vspace="5" hspace="5" />{' '}
+            <ImgOne
+              src={Mercury2}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />{' '}
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Dan Gurney Special:</Span> In 1967, Mercury introduced a

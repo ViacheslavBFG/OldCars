@@ -35,7 +35,14 @@ const AmcRebel = () => {
             Three interesting facts about the first-generation AMC Rebel:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={AMC2} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={AMC2}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Introduction of "Marlin" Fastback Model:</Span> The
@@ -61,7 +68,14 @@ const AmcRebel = () => {
                 driving experience.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgTwo src={AMC3} alt="" align="right" vspace="5" hspace="5" />
+            <ImgTwo
+              src={AMC3}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Performance-Oriented "Machine" Variant:</Span>In 1970, the

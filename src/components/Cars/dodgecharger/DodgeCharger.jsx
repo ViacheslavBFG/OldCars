@@ -34,7 +34,14 @@ const DodgeCharger = () => {
             Three interesting facts about the first-generation Dodge Charger:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={Dodge2} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={Dodge2}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Fastback Design:</Span> The first-generation Dodge
@@ -56,7 +63,14 @@ const DodgeCharger = () => {
                 headlights were not in use.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgOne src={Dodge3} alt="" align="right" vspace="5" hspace="5" />{' '}
+            <ImgOne
+              src={Dodge3}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />{' '}
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Performance Variants:</Span> The first-generation Dodge

@@ -35,7 +35,14 @@ const ChevroletCamaro = () => {
             Three interesting facts about the first-generation Chevrolet Camaro:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={Camaro2} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={Camaro2}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Competition with the Ford Mustang:</Span> The Chevrolet
@@ -59,7 +66,14 @@ const ChevroletCamaro = () => {
                 of the Camaro.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgTwo src={Camaro3} alt="" align="right" vspace="5" hspace="5" />{' '}
+            <ImgTwo
+              src={Camaro3}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />{' '}
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Yenko Camaro:</Span> Don Yenko, a Chevrolet dealer and

@@ -34,7 +34,14 @@ const PontiacFirebird = () => {
             Three interesting facts about the first-generation Pontiac Firebird:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={Pontiac3} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={Pontiac3}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Shared Platform with the Chevrolet Camaro:</Span> The
@@ -59,7 +66,14 @@ const PontiacFirebird = () => {
                 version of the Firebird.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgTwo src={Pontiac2} alt="" align="right" vspace="5" hspace="5" />{' '}
+            <ImgTwo
+              src={Pontiac2}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />{' '}
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Trans Am Performance Package:</Span> The Pontiac Firebird

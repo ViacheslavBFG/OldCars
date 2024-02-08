@@ -20,7 +20,7 @@ export const MainContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
   overflow: hidden;
   animation: ${stretchFadeIn} 1s ease;
 `;
@@ -46,8 +46,11 @@ export const ImgOne = styled.img`
   width: 448px;
   border-radius: 15px;
   .float-img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Add margin to create space between text and image */
+    float: right;
+    margin: 0 0 10px 10px;
+  }
+  @media (max-width: 500px) {
+    max-width: 100%;
   }
 `;
 

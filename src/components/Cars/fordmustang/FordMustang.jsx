@@ -23,7 +23,7 @@ const FordMustang = () => {
   return (
     <>
       <MainContainer>
-      <Link to="/gallery">
+        <Link to="/gallery">
           <HeaderDiv>
             <Header />
           </HeaderDiv>
@@ -33,7 +33,14 @@ const FordMustang = () => {
             Three interesting facts about the first-generation Ford Mustang:
           </TitleFacts>
           <PositionContainer>
-            <ImgOne src={Ford2} alt="" align="left" vspace="5" hspace="5" />
+            <ImgOne
+              src={Ford2}
+              alt=""
+              align="left"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />
             <FactOneDiv>
               <ParagraphFactOne>
                 <Span>Pony Car Segment Pioneer:</Span> The Ford Mustang is often
@@ -59,7 +66,14 @@ const FordMustang = () => {
                 iconic symbol of the 1960s American automotive culture.
               </ParagraphFactTwo>
             </FactTwoDiv>
-            <ImgOne src={Ford3} alt="" align="right" vspace="5" hspace="5" />{' '}
+            <ImgOne
+              src={Ford3}
+              alt=""
+              align="right"
+              vspace="5"
+              hspace="5"
+              loading="lazy"
+            />{' '}
             <FactThreeDiv>
               <ParagraphFactThree>
                 <Span>Mustang GT and Shelby GT350:</Span> Ford introduced the

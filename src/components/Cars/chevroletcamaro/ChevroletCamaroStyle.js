@@ -21,7 +21,7 @@ export const MainContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
   overflow: hidden;
   animation: ${fadeIn} 1s ease-in-out;
 `;
@@ -50,6 +50,10 @@ export const ImgOne = styled.img`
     float: right;
     margin: 0 0 10px 10px;
   }
+
+  @media (max-width: 531px) {
+    max-width: 100%;
+  }
 `;
 
 export const ImgTwo = styled.img`
@@ -58,6 +62,9 @@ export const ImgTwo = styled.img`
   .float-img {
     float: right;
     margin: 0 0 10px 10px;
+  }
+  @media (max-width: 480px) {
+    max-width: 100%;
   }
 `;
 
