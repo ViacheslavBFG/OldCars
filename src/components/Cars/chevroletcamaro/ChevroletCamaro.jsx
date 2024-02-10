@@ -18,9 +18,44 @@ import {
   Span,
 } from './ChevroletCamaroStyle';
 import { Link } from 'react-router-dom';
-import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
+import { EngDiv, HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
+import Engine from 'components/Engine/engine';
 
 const ChevroletCamaro = () => {
+  const enginesData = [
+    {
+      title: '230 cu in (3.8 L) Straight-6:',
+      description: `This was the base engine option for the Camaro. It was a reliable inline-six engine, producing around 140 horsepower and 220 lb-ft of torque. This engine provided decent performance and fuel efficiency.`,
+    },
+    {
+      title: '250 cu in (4.1 L) Straight-6:',
+      description: `Another inline-six engine option, the 250 cubic inch variant offered slightly more power than the base engine, with approximately 155 horsepower and 235 lb-ft of torque. It provided a balance between performance and efficiency.`,
+    },
+    {
+      title: '283 cu in (4.6 L) V8:',
+      description: `The smallest V8 engine option available for the first-generation Camaro, the 283 V8 produced around 195 horsepower and 285 lb-ft of torque. It offered improved performance compared to the inline-six engines, with a smooth power delivery.`,
+    },
+    {
+      title: '302 cu in (4.9 L) V8:',
+      description: `This high-performance V8 engine was specifically designed for Camaro's performance-oriented models like the Z/28. It delivered approximately 290 horsepower and 290 lb-ft of torque, making it a favorite among enthusiasts for its high-revving nature and track capabilities.`,
+    },
+    {
+      title: '307 cu in (5.0 L) V8:',
+      description: `The 307 V8 was a popular engine choice for Camaro buyers looking for a balance of power and drivability. It produced around 200 horsepower and 300 lb-ft of torque, offering smooth acceleration and ample low-end torque.`,
+    },
+    {
+      title: '327 cu in (5.4 L) V8:',
+      description: `This mid-range V8 engine option provided a good balance of power and efficiency. With outputs ranging from 210 to 375 horsepower depending on the configuration, it offered versatility for various driving needs.`,
+    },
+    {
+      title: '350 cu in (5.7 L) V8:',
+      description: `The 350 V8 was one of the most iconic and widely used engine options for the first-generation Camaro. It offered a wide range of power outputs, from around 250 to 375 horsepower, depending on the specific variant and tuning. It was known for its robust performance and aftermarket support.`,
+    },
+    {
+      title: '396 cu in (6.5 L) V8:',
+      description: `This big-block V8 engine, also known as the 396 Turbo-Jet, was the top-of-the-line performance option for the Camaro. It produced impressive horsepower figures, ranging from around 325 to 375 horsepower, and massive torque, making it suitable for drag racing and high-speed cruising.`,
+    },
+  ];
   return (
     <>
       <MainContainer>
@@ -32,6 +67,10 @@ const ChevroletCamaro = () => {
 
         <TextContainer>
           <TitleFacts>
+            <EngDiv>
+              {' '}
+              <Engine enginesData={enginesData} />
+            </EngDiv>
             Three interesting facts about the first-generation Chevrolet Camaro:
           </TitleFacts>
           <PositionContainer>

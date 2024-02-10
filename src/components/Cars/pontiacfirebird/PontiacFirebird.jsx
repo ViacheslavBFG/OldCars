@@ -18,9 +18,36 @@ import {
   Span,
 } from './PontiacFirebirdStyle';
 import { Link } from 'react-router-dom';
-import { HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
+import { EngDiv, HeaderDiv } from '../amcrebelmachine/AmcRebelStyle';
+import Engine from 'components/Engine/engine';
 
 const PontiacFirebird = () => {
+  const enginesData = [
+    {
+      title: '230 cu in (3.8 L) Straight-6:',
+      description: `Serving as the base engine option for the Firebird, this inline-six provided modest performance and fuel efficiency. It typically produced around 140 horsepower and 220 lb-ft of torque, offering reliability and affordability for everyday driving.`,
+    },
+    {
+      title: '250 cu in (4.1 L) Straight-6:',
+      description: `Another inline-six engine option, the 250 cubic inch variant offered slightly more power than the base engine, with approximately 155 horsepower and 235 lb-ft of torque. It provided a balance of performance and efficiency suitable for daily driving.`,
+    },
+    {
+      title: '326 cu in (5.3 L) V8:',
+      description: `The 326 V8 was one of the smaller V8 engine options available for the Firebird. It produced around 250 horsepower and 350 lb-ft of torque, offering improved performance over the inline-six engines while still providing a smooth and manageable driving experience.`,
+    },
+    {
+      title: '350 cu in (5.7 L) V8:',
+      description: `A popular choice among Firebird buyers, the 350 V8 offered a good balance of power and drivability. With outputs ranging from approximately 265 to 325 horsepower and 355 to 380 lb-ft of torque, depending on the specific variant and tuning, it provided smooth acceleration and ample low-end torque.`,
+    },
+    {
+      title: '400 cu in (6.6 L) V8:',
+      description: ` The 400 V8 was one of the higher-performance engine options available for the Firebird. It delivered impressive horsepower figures, ranging from around 330 to 335 horsepower and 430 to 445 lb-ft of torque, making it suitable for high-speed cruising and spirited driving.`,
+    },
+    {
+      title: '428 cu in (7.0 L) V8:',
+      description: `The 428 V8, also known as the "Big Block," was the top-of-the-line performance option for the Firebird. It produced staggering horsepower figures, ranging from approximately 360 to 390 horsepower, and massive torque, making it a dominant force on the road and the drag strip.`,
+    },
+  ];
   return (
     <>
       <MainContainer>
@@ -31,6 +58,10 @@ const PontiacFirebird = () => {
         </Link>
         <TextContainer>
           <TitleFacts>
+            <EngDiv>
+              {' '}
+              <Engine enginesData={enginesData} />
+            </EngDiv>
             Three interesting facts about the first-generation Pontiac Firebird:
           </TitleFacts>
           <PositionContainer>

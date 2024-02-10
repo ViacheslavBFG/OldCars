@@ -1,6 +1,16 @@
 import styled, { keyframes } from 'styled-components';
 import BcOld from '../../../styles/img/bcg/bcOld2.jpg';
 
+export const EngDiv = styled.div`
+  position: absolute;
+  left: 88%;
+  top: 5%;
+  @media (max-width: 1024px) {
+    left: 75%;
+    top: 8%;
+  }
+`;
+
 const colorShift = keyframes`
  0% {
     opacity: 0.50;

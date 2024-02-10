@@ -20,7 +20,6 @@ export const MainContainer = styled.div`
   width: 100vw;
   margin: 0;
   padding-top: 30px;
-  overflow: hidden;
   animation: ${rotateAndFadeIn} 1s ease;
 `;
 
