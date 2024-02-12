@@ -15,6 +15,7 @@ export const Btn = styled.button`
   @media (max-width: 570px) {
     font-size: 18px;
   }
+  color: black;
   background-color: orange;
   border-radius: 15px;
   position: relative;
