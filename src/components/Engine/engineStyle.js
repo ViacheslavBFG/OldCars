@@ -19,4 +19,5 @@ export const Btn = styled.button`
   border-radius: 15px;
   position: relative;
   animation: ${bounceAnimation} 4s infinite linear;
+  background-color: 2px solid black;
 `;
