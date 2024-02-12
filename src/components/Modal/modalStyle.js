@@ -49,13 +49,13 @@ export const ModalWindowStyle = styled.div`
   @media screen and (max-width: 900px) {
     width: 550px;
     height: 600px;
-    font-size: 13px;
+    font-size: 11px;
     border-radius: 15px;
   }
 
   @media screen and (max-width: 520px) {
     width: 450px;
-    height: 550px;
+    height: 600px;
     font-size: 9px;
     border-radius: 15px;
   }
