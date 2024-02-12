@@ -40,15 +40,24 @@ export const ModalWindowStyle = styled.div`
   @media screen and (min-width: 768px) {
     width: 100%;
     height: 100%;
-
+    border-radius: 15px;
     padding: calc(20 * (100vw / 480));
     min-width: 900px;
     min-height: 650px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 900px) {
+    width: 550px;
+    height: 600px;
+    font-size: 13px;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 520px) {
     width: 450px;
-    height: 338px;
+    height: 550px;
+    font-size: 9px;
+    border-radius: 15px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -70,7 +79,8 @@ export const ButtonCloseStyle = styled.button`
   line-height: 0;
   border: none;
   cursor: pointer;
-  display: none;
+  /* display: none; */
+  display: block;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -86,79 +96,6 @@ export const ButtonCloseStyle = styled.button`
   }
 `;
 // ---------------------------
-
-export const RequestDel = styled.h3`
-  top: 70px;
-  position: absolute;
-  color: #fbfcfc;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28.5px;
-`;
-
-export const BtnBox = styled.div`
-  display: flex;
-  gap: 8px;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  bottom: 80px;
-`;
-
-export const ConfirmBtnStyle = styled.button`
-  width: 151px;
-  height: 48px;
-  color: #fbfcfc;
-  border: none;
-  border-radius: 12px;
-  background: #47523f;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  cursor: pointer;
-
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-
-  &:hover {
-    opacity: 0.8;
-    transform: translateY(-1px);
-  }
-`;
-
-export const CancelBtnStyle = styled.button`
-  width: 132px;
-  height: 48px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #282828;
-  border-radius: 12px;
-  border: none;
-  line-height: 20px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 1.8px;
-  color: #fbfcfc;
-
-  cursor: pointer;
-
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-
-  &:hover {
-    opacity: 0.8;
-    transform: translateY(-1px);
-  }
-`;
 
 export const Modalul = styled.ul`
   width: 100%;
